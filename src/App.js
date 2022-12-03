@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='d-flex justify-content-center p-5'>
+      <form className='row w-25 gy-2'>
+        <div className='col-6'>
+          <label className='form-label'>First name*</label>
+          <input type='text' className='form-control' />
+        </div>
+        <div className='col-6'>
+          <label className='form-label'>Last name*</label>
+          <input type='text' className='form-control' />
+        </div>
+        <div className='col-12'>
+          <label className='form-label'>Email*</label>
+          <input type='text' className='form-control' />
+        </div>
+        <div className='col-12'>
+          <label className='form-label'>Address</label>
+          <input type='text' className='form-control' />
+        </div>
+        <div className='col-12'>
+          <button className='btn btn-primary' type='submit'>
+            Submit
+          </button>
+        </div>
+      </form>
     </div>
   );
 }
