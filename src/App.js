@@ -7,14 +7,17 @@ function App() {
         <div className='col-6'>
           <label className='form-label'>First name*</label>
           <input type='text' className='form-control' />
+          <p className="text-danger">Error message here</p>
         </div>
         <div className='col-6'>
           <label className='form-label'>Last name*</label>
           <input type='text' className='form-control' />
+          <p className="text-danger">Error message here</p>
         </div>
         <div className='col-12'>
           <label className='form-label'>Email*</label>
           <input type='text' className='form-control' />
+          <p className="text-danger">Error message here</p>
         </div>
         <div className='col-12'>
           <label className='form-label'>Address</label>
